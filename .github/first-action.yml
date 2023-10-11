@@ -1,5 +1,9 @@
 name: First Workflow
 on: workflow_dispatch
+on:
+  push:
+    branches:
+      - auto-build
 jobs:
   first-job:
     runs-on: windows-latest
